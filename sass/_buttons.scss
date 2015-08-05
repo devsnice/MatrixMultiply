@@ -1,0 +1,73 @@
+// Стилизация элементов управления
+.button {
+	border: 0;
+	box-shadow: none;
+	cursor: pointer;
+	font-family: SegoeUIRegular, Arial;
+	outline: none;
+	user-select: none;
+	word-wrap: break-word;
+	transition: 0.3s ease;
+
+
+	&_result {
+		background: #00a500;
+		@include background-image(linear-gradient(#4ba91d, #39930d));
+		border-radius: 5px 0 0 5px;
+		border: 1px solid #4a803c;
+		color: #fff;
+		font-size: 16px;
+		height: 38px;
+		position: relative;
+		width: 190px;
+
+		&:after {
+			background: url("../img/button_arrow.png");
+			content: "";
+			height: 38px;
+			position: absolute;
+			right: -12px;
+			top: -1px;
+			width: 13px;
+		}
+	}
+
+	&_gray {
+		@include background-image(linear-gradient(#fefefe, #ececec));
+		border-radius: 2px;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+		height: 28px;
+		line-height: 26px;
+		padding: 0 8px 0 24px;
+
+		&:hover {
+			@include background-image(linear-gradient(#f2f2f2, #dfdfdf));
+			color: #404040;
+		}
+		
+	
+		&:active {
+			background: #d9d9d9;
+			color: #404040;
+		}
+		
+		// &:focus {
+		// 	border: 2px solid #5199db;
+		// 	box-shadow: none;
+		// 	line-height: 22px;
+		// }
+
+		&:disabled {
+			background: #f2f2f2;
+			color: #808080;
+		}
+
+		&-clear {
+			margin-bottom: 10px;
+		}
+	}
+
+	&_little {
+		width: 95px;
+	}
+}

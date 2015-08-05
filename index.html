@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test task - перемножение матриц</title>
+        <meta name="description" content="Перемножение матриц онлайн, онлайн решение элементарных действий с матрицами">
+
+        <!-- Include CSS -->
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <!-- Include Font -->
+        <link rel="stylesheet" href="stylesheets/fonts.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- App -->
+        <main class="app" role="application">
+        
+            <!-- Панель-управления  -->
+            <aside class="app-panel" id="js-appPanel">
+                <button class="app-panel__result button button_result" id="js-getResult">
+                    Умножить матрицы
+                </button>
+                
+                <!-- Для устройств с шириной экрана <= 768px Дополнительный блок оповещения.-->
+                <div class="app-panel-faq">
+                    Наведите курсор-мыши в эту область, чтобы открыть панель-настроек.
+                </div>
+
+                <section class="app-panel-controls">
+                    <div class="app-panel-controls__actions">
+                        <button class="button button_gray button_gray-clear i-icon i-icon_clean" id="js-clearMatrixs">Очистить матрицы</button>
+                        <button class="button button_gray button_gray-swap i-icon i-icon_swap" id="js-swapMatrixs">Поменять матрицы местами</button>
+                    </div>
+           
+                    <div class="app-panel-controls__manipulation">
+                        <fieldset class="app-panel-controls__manipulation-labels"> 
+                            <label class="blue">
+                                <input type="radio" name="matrix_check" checked>
+                                <span>Матрица А</span>
+                            </label>
+                        
+                            <label class="blue">
+                                <input type="radio" name="matrix_check">
+                                <span>Матрица B</span>
+                            </label>
+                        </fieldset> 
+                        
+                        <fieldset class="app-panel-controls__rowcontrol"> 
+                            <button class="button button_gray button_little i-icon i-icon_plus" id="js-addRow">Добавить</button>
+                            <button class="button button_gray button_little i-icon i-icon_minus" id="js-removeRow">Удалить</button>
+                            <span>cтроку</span>
+                        </fieldset> 
+                        
+                        <fieldset class="app-panel-controls__rowcontrol"> 
+                            <button class="button button_gray button_little i-icon i-icon_plus" id="js-addCol">Добавить</button>
+                            <button class="button button_gray button_little i-icon i-icon_minus" id="js-removeCol">Удалить</button>
+                            <span>столбец</span>
+                        </fieldset>
+                    </div>
+
+                    <!-- Блок для вывода оповещений -->
+                    <div class="app-panel-controls__warning" id="js-panel-warning"></div>
+                </section>
+            </aside>
+            
+            <!-- Область выполнения -->
+            <section class="app-space" id="js-app">
+                <section id="js-app-row-first">
+                 <!-- Результирующая матрица -->
+                    <section class="matrix matrix_result" id="js-matrix-result"></section>
+                    
+                    <!-- Матрица А -->
+                    <section class="matrix matrix_source matrix_a" id="js-matrix-a">
+                        <span class="matrix__name">A</span> 
+                    </section>      
+                </section>
+       
+                <section id="js-app-row-second">
+                   <!-- Матрица B -->
+                    <section class="matrix matrix_source matrix_b" id="js-matrix-b">
+                        <span class="matrix__name">B</span>
+                    </section>
+                </section>
+            </section>   
+
+        </main>
+    
+        <!-- Include JS-files-->
+        <script src="js/mainCode.js"></script>
+
+        <!--[if lt IE 10 ]>
+        <script src="js/placeholderForIE.js"></script>
+        <![endif]-->
+    </body>
+</html>

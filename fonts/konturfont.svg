@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="uniE00D" unicode="&#xe801;" d="m858 422v-215h-286v-285h-214v285h-287v215h287v285h214v-285h286z" horiz-adv-x="1000" />
+<glyph glyph-name="uniE01E" unicode="&#xe802;" d="m143 207v215h786v-215h-786z" horiz-adv-x="1000" />
+<glyph glyph-name="uniE012" unicode="&#xe803;" d="m565 497q-97 0-162-64t-69-154h177l-263-249-3-3q-5 3-31 36l-214 216h138q0 71 27 137t78 118q69 68 160 92t184 0 161-92q103-104 105-252h-54q-7 87-71 151t-163 64z" horiz-adv-x="1000" />
+<glyph glyph-name="uniE01F" unicode="&#xe804;" d="m571 207v429h143v-429h143l-214-264-214 264h142z m-214 215v-429h-143v429h-143l215 264 214-264h-143z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
